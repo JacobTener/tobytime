@@ -45,7 +45,7 @@ export class DragareaComponent implements OnInit {
     console.log(event)
   }
 
-  checkWin(event: MouseEvent){
+  checkWin(){
     let boxes = document.querySelectorAll('.box');
     let rectangle = document.querySelector('.boundary');
     if(boxes && rectangle) {

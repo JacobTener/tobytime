@@ -1,4 +1,4 @@
-  <div class="box" *ngFor="let box of boxes" [ngClass]="box.title" [ngStyle]="{'left.px':box.xCoord, 'top.px':box.yCoord}" cdkDrag (mouseup)="checkWin($event)"></div>
+  <div class="box" *ngFor="let box of boxes" [ngClass]="box.title" [ngStyle]="{'left.px':box.xCoord, 'top.px':box.yCoord}" cdkDrag (touchend) = "checkWin" (mouseup)="checkWin()"></div>
 
 
 
